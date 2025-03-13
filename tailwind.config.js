@@ -6,15 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          light: '#F8F8F8',
-          DEFAULT: '#D8D8D8',
-          dark: '#181818',
+        lightmode: {
+          text: '#181818',
+          bodyBg: '#F5F5F5',
+          buttonBg: '#1A3B28'
         },
-        secondary: {
-          light: '#FFFFFF',
-          DEFAULT: '#242424',
-          dark: '#000000',
+        darkmode: {
+          text: '#F5F5F5',
+          bodyBg: '#1A3B28',
+          buttonBg: '#1A3B28',
         },
       }
     },
