@@ -21,7 +21,7 @@
   --darkmodetextcolor: hsl(0, 0%, 96%);
 
   --lightmodeheaderbgcolor: hsl(0, 0%, 96%);
-  --darkmodeheaderbgcolor: hsl(144, 41%, 7%);
+  --darkmodeheaderbgcolor: hsl(144, 41%, 5%);
 }
 
 html {
