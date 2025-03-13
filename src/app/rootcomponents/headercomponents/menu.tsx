@@ -19,7 +19,7 @@ export default function Menu() {
       </button>
 
       <ul
-        className="absolute bg-lightmode-bg-color border-2  border-text-darkmode-bg-color rounded hidden flex-col gap-[5rem] lg:flex lg:flex-row lg:align-center"
+        className="absolute lg:relative bg-lightmode-bg-color lg:bg-transparent lg:border-0 border-2 border-text-darkmode-bg-color rounded hidden flex-col gap-[5rem] lg:flex lg:flex-row lg:align-center"
         id="menu"
       >
         <li>
