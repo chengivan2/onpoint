@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="flex flex-col dark:bg-[#1a3b28]">
+      <body className="flex flex-col bg-lightmodebodybg dark:bg-darkmodebodybg">
         <ThemeProvider
         attribute="class"
         enableSystem
