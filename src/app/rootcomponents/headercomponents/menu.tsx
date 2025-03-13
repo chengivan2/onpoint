@@ -6,7 +6,7 @@ export default function Menu() {
     className="flex-grow px-[1rem]" 
     >
         <ul 
-        className="flex flex-col gap-2 lg:flex-row lg:justify-between">
+        className="flex flex-col gap-[5rem] lg:flex-row lg:align-center">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/">Blog</Link></li>
             <li><Link href="/">Contact</Link></li>
