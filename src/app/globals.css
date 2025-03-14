@@ -12,6 +12,9 @@
 
   --color-lightmode-header-bg-color: var(--lightmodeheaderbgcolor);
   --color-darkmode-header-bg-color: var(--darkmodeheaderbgcolor);
+
+  --color-lightmode-footer-bg-color: var(--lightmodefooterbgcolor);
+  --color-darkmode-footer-bg-color: var(--darkmodefooterbgcolor);
 }
 
 :root {
@@ -22,6 +25,9 @@
 
   --lightmodeheaderbgcolor: hsl(0, 0%, 96%);
   --darkmodeheaderbgcolor: hsl(144, 41%, 5%);
+
+  --lightmodefooterbgcolor: hsl(0, 0%, 96%);
+  --darkmodefooterbgcolor: hsl(144, 41%, 5%);
 }
 
 
