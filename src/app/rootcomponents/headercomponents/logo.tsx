@@ -10,7 +10,7 @@ export default function HeaderLogo() {
         height={50}
         alt="OnPoint header logo"
         src="/logos/onpointhflightmodelogo.png"
-        className="flex dark:hidden"
+        className="flex duration-300 dark:hidden"
       />
 
       <Image
@@ -18,7 +18,7 @@ export default function HeaderLogo() {
         height={50}
         alt="OnPoint header logo"
         src="/logos/onpointhfdarkmodelogo.png"
-        className="hidden dark:flex"
+        className="hidden duration-300 dark:flex"
       />
     </div>
   );
