@@ -10,7 +10,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-white dark:bg-gray-900 shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-lightmode-header-bg-color dark:bg-darkmode-header-bg-color shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <HeaderLogo />
