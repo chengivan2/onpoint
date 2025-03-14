@@ -5,7 +5,7 @@ import ThemeToggle from "./themetoggle";
 
 export default function Header() {
   return (
-    <header className="relative px-[1rem] flex flex-row w-full justify-between items-center bg-lightmode-header-bg-color dark:bg-darkmode-header-bg-color">
+    <header className="relative px-[1rem] py-[1rem] flex flex-row w-full justify-between items-center bg-lightmode-header-bg-color dark:bg-darkmode-header-bg-color">
       <HeaderLogo />
       <Menu />
       <div
