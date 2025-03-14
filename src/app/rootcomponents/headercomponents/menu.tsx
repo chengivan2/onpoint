@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Menu() {
   return (
-    <div className="flex-grow px-[1rem]">
+    <div className="flex flex-row justify-between items-center align-center px-[1rem]">
       <button
         className="lg:hidden hover:cursor-pointer"
         onClick={() => {
