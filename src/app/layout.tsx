@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import ScrollToTop from './rootcomponents/ScrollToTop';
 
 export const metadata: Metadata = {
   title: "Travely",
@@ -21,6 +22,7 @@ export default function RootLayout({
         defaultTheme="system">
           {children}
         </ThemeProvider>
+        <ScrollToTop />
       </body>
     </html>
   );
