@@ -19,6 +19,9 @@
 
   --color-lightmode-footer-bg-color: var(--lightmodefooterbgcolor);
   --color-darkmode-footer-bg-color: var(--darkmodefooterbgcolor);
+
+  --color-lightmode-scrolltotop-bg-color: var(--lightmodescrolltotopbgcolor);
+  --color-darkmode-scrolltotop-bg-color: var(--darkmodescrolltotopbgcolor);
 }
 
 :root {
@@ -32,6 +35,9 @@
 
   --lightmodefooterbgcolor: hsl(0, 0%, 96%);
   --darkmodefooterbgcolor: hsl(144, 41%, 5%);
+
+  --lightmodescrolltotopbgcolor: hsl(144, 41%, 5%);
+  --darkmodescrolltotopbgcolor: hsl(0, 0%, 96%);
 }
 
 html {
