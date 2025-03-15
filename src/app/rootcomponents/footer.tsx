@@ -139,7 +139,7 @@ export default function Footer() {
         </div>
         <div className="px-[2rem] mt-12 flex flex-wrap items-end justify-between gap-6 border-t py-6">
           <span className="text-muted-foreground order-last block text-center text-sm md:order-first">
-            © {new Date().getFullYear()} OnPoint Travel Agency, All rights reserved
+            © {new Date().getFullYear()} OnPoint Travel Agency
           </span>
           <div className="order-first flex flex-wrap justify-center gap-6 text-sm md:order-last">
             <Link
