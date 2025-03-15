@@ -37,7 +37,7 @@
   --darkmodefooterbgcolor: hsl(144, 41%, 5%);
 
   --lightmodescrolltotopbgcolor: hsla(144, 38%, 5%, 0.8);
-  --darkmodescrolltotopbgcolor: hsla(0, 0%, 96%, 0.8);
+  --darkmodescrolltotopbgcolor: hsla(146, 100%, 97%, 0.8);
 }
 
 html {
