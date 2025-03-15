@@ -38,6 +38,9 @@
 
   --lightmodescrolltotopbgcolor: hsla(144, 38%, 5%, 0.8);
   --darkmodescrolltotopbgcolor: hsla(146, 100%, 97%, 0.8);
+
+  --lightmodescrolltotopcolor: hsla(144, 38%, 5%, 0.8);
+  --darkmodescrolltotopcolor: hsla(146, 100%, 97%, 0.8);
 }
 
 html {
