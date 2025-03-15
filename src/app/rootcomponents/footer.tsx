@@ -137,7 +137,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="px-[2rem] mt-12 flex flex-wrap items-end justify-between gap-6 border-t py-6">
+        <div className="px-[3rem] lg:px-[3rem] mt-12 flex flex-wrap items-end justify-between gap-6 border-t py-6">
           <span className="text-muted-foreground order-last block text-center text-sm md:order-first">
             © {new Date().getFullYear()} OnPoint Travel Agency
           </span>
