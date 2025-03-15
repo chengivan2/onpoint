@@ -22,6 +22,9 @@
 
   --color-lightmode-scrolltotop-bg-color: var(--lightmodescrolltotopbgcolor);
   --color-darkmode-scrolltotop-bg-color: var(--darkmodescrolltotopbgcolor);
+
+  --color-lightmode-scrolltotop-color: var(--lightmodescrolltotopcolor);
+  --color-darkmode-scrolltotop-color: var(--darkmodescrolltotopcolor);
 }
 
 :root {
