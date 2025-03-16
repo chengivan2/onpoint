@@ -34,6 +34,9 @@
 
   --color-lightmode-headertext-active-color: var(--lightmodeheadertextactive);
   --color-darkmode-headertext-active-color: var(--darkmodeheadertextactive);
+
+  --color-lightmode-btn-bg-color: var(--lightmodebtnbgcolor);
+  --color-darkmode-btn-bg-color: var(--darkmodebtnbgcolor);
 }
 
 :root {
