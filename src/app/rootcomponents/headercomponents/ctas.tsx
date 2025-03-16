@@ -5,7 +5,7 @@ export default function HeaderCtas() {
     <div
     className="flex-grow" 
     >
-        <Button>
+        <Button className="text-[0.8rem]">
             Make Your Own Trip
         </Button>
     </div>
