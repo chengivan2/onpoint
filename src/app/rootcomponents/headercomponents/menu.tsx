@@ -15,7 +15,7 @@ export default function Menu() {
         Services
       </Link>
       <Link href="#" className="text-lightmode-headertext-color dark:text-darkmode-headertext-color hover:text-lightmode-headertext-hover-color dark:hover:text-darkmode-headertext-hover-color active:text-lightmode-headertext-active-color dark:active:text-darkmode-headertext-active-color block">
-        Contac
+        Contact
       </Link>
     </div>
   );
