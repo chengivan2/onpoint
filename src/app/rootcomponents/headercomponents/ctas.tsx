@@ -5,7 +5,7 @@ export default function HeaderCtas() {
     <div
     className="flex-grow" 
     >
-        <Button className="text-[0.8rem]">
+        <Button className="text-[0.8rem] bg-lightmode-btn-bg-color dark:bg-darkmode-btn-bg-color">
             Make Your Own Trip
         </Button>
     </div>
