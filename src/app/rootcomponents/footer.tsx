@@ -2,112 +2,6 @@ import Link from "next/link";
 import FooterLogo from "./footercomponents/logo";
 
 export default function Footer() {
-  const links = [
-    {
-      group: "Top Destinations",
-      items: [
-        {
-          title: "Diani",
-          href: "#",
-        },
-        {
-          title: "Nairobi",
-          href: "#",
-        },
-        {
-          title: "Arusha",
-          href: "#",
-        },
-        {
-          title: "Masai Mara",
-          href: "#",
-        },
-        {
-          title: "Mombasa",
-          href: "#",
-        },
-        {
-          title: "Doha",
-          href: "#",
-        },
-      ],
-    },
-    // {
-    //   group: "Solution",
-    //   items: [
-    //     {
-    //       title: "Startup",
-    //       href: "#",
-    //     },
-    //     {
-    //       title: "Freelancers",
-    //       href: "#",
-    //     },
-    //     {
-    //       title: "Organizations",
-    //       href: "#",
-    //     },
-    //     {
-    //       title: "Students",
-    //       href: "#",
-    //     },
-    //     {
-    //       title: "Collaboration",
-    //       href: "#",
-    //     },
-    //     {
-    //       title: "Design",
-    //       href: "#",
-    //     },
-    //     {
-    //       title: "Management",
-    //       href: "#",
-    //     },
-    //   ],
-    // },
-    {
-      group: "Company",
-      items: [
-        {
-          title: "About",
-          href: "#",
-        },
-        {
-          title: "Careers",
-          href: "#",
-        },
-        {
-          title: "Blog",
-          href: "#",
-        },
-        {
-          title: "Contact",
-          href: "#",
-        },
-        {
-          title: "Help",
-          href: "#",
-        },
-      ],
-    },
-    {
-      group: "Legal",
-      items: [
-        {
-          title: "Licence",
-          href: "#",
-        },
-        {
-          title: "Privacy",
-          href: "#",
-        },
-        {
-          title: "Terms & Conditions",
-          href: "#",
-        },
-      ],
-    },
-  ];
 
   return (
     <footer className="bg-lightmode-footer-bg-color pt-20 dark:bg-darkmode-footer-bg-color">
@@ -120,22 +14,6 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 md:col-span-3">
-            {links.map((link, index) => (
-              <div key={index} className="space-y-4 text-sm">
-                <span className="block font-bold"><h2>{link.group}</h2></span>
-                {link.items.map((item, index) => (
-                  <Link
-                    key={index}
-                    href={item.href}
-                    className="font-extralight text-muted-foreground hover:text-primary block duration-150"
-                  >
-                    <span>{item.title}</span>
-                  </Link>
-                ))}
-              </div>
-            ))}
-          </div>
         </div>
         <div className="px-[2rem] lg:px-[2rem] mt-12 flex flex-wrap items-end justify-between gap-6 border-t dark:border-t py-6">
           <span className="text-muted-foreground order-last block text-center text-sm md:order-first">
