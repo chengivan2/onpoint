@@ -57,13 +57,13 @@
 
 
 
-  --lightmodeheadertextcolor: hsl(0, 0%, 10%);
+  --lightmodeheadertextcolor: hsl(0, 0%, 5%);
   --darkmodeheadertextcolor: hsl(0, 0%, 96%);
 
-  --lightmodeheadertexthover: hsl(146, 41%, 10%);
+  --lightmodeheadertexthover: hsl(146, 37%, 33%);
   --darkmodeheadertexthover: hsl(146, 100%, 73%);
 
-  --lightmodeheadertextactive: hsl(0, 0%, 30%);
+  --lightmodeheadertextactive: hsl(146, 100%, 73%);
   --darkmodeheadertextactive: hsl(0, 0%, 100%);
   
 }
