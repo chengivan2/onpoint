@@ -44,6 +44,16 @@
 
   --lightmodescrolltotopcolor: hsla(146, 100%, 97%, 0.8);
   --darkmodescrolltotopcolor: hsla(144, 38%, 5%, 0.8);
+
+  --lightmodeheadertextcolor: hsl(0, 0%, 10%); /* Dark gray for light mode text */
+  --darkmodeheadertextcolor: hsl(0, 0%, 95%); /* Light gray for dark mode text */
+
+  --lightmode-header-text-hover: hsl(0, 0%, 20%);
+  --darkmode-header-text-hover: hsl(0, 0%, 80%); 
+
+  --lightmode-header-text-active: hsl(0, 0%, 30%);
+  --darkmode-header-text-active: hsl(0, 0%, 100%);
+  
 }
 
 html {
