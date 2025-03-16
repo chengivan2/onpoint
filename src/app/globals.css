@@ -54,9 +54,6 @@
   --lightmodescrolltotopcolor: hsla(146, 100%, 97%, 0.8);
   --darkmodescrolltotopcolor: hsla(144, 38%, 5%, 0.8);
 
-
-
-
   --lightmodeheadertextcolor: hsl(0, 0%, 5%);
   --darkmodeheadertextcolor: hsl(0, 0%, 96%);
 
@@ -65,6 +62,9 @@
 
   --lightmodeheadertextactive: hsl(146, 100%, 72%);
   --darkmodeheadertextactive: hsl(146, 100%, 72%);
+
+  --lightmodebtnbgcolor: hsl(146, 41%, 10%);
+  --darkmodebtnbgcolor: hsl(146, 100%, 97%);
   
 }
 
