@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import HeaderCtas from "./headercomponents/ctas";
 import HeaderLogo from "./headercomponents/logo";
 import Menu from "./headercomponents/menu";
@@ -8,9 +8,48 @@ import ThemeToggle from "./themetoggle";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlHeader = () => {
+    if (typeof window !== 'undefined') {
+      // If we're scrolling down and we're past 100px, hide the header
+      if (window.scrollY > lastScrollY && window.scrollY > 100) {
+        setIsVisible(false);
+        // Close mobile menu when header hides
+        setIsMenuOpen(false);
+      } 
+      // If we're scrolling up, show the header
+      else if (window.scrollY < lastScrollY) {
+        setIsVisible(true);
+      }
+
+      // Update last scroll position
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlHeader);
+
+      // Cleanup function
+      return () => {
+        window.removeEventListener('scroll', controlHeader);
+      };
+    }
+  }, [lastScrollY]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-lightmode-header-bg-color dark:bg-darkmode-header-bg-color shadow-md">
+    <header className={`
+      fixed top-0 left-0 right-0 z-50 
+      px-4 py-3 
+      bg-lightmode-header-bg-color dark:bg-darkmode-header-bg-color 
+      shadow-md
+      transition-transform duration-300
+      ${isVisible ? 'translate-y-0' : '-translate-y-full'}
+      ${isMenuOpen ? '!translate-y-0' : ''}
+    `}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <HeaderLogo />
