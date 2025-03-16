@@ -60,8 +60,8 @@
   --lightmodeheadertextcolor: hsl(0, 0%, 10%);
   --darkmodeheadertextcolor: hsl(0, 0%, 96%);
 
-  --lightmodeheadertexthover: hsl(0, 0%, 20%);
-  --darkmodeheadertexthover: hsl(0, 0%, 80%);
+  --lightmodeheadertexthover: hsl(146, 41%, 10%);
+  --darkmodeheadertexthover: hsl(146, 97%, 72%);
 
   --lightmodeheadertextactive: hsl(0, 0%, 30%);
   --darkmodeheadertextactive: hsl(0, 0%, 100%);
