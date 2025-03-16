@@ -65,6 +65,9 @@
 
   --lightmodebtnbgcolor: hsl(146, 41%, 10%);
   --darkmodebtnbgcolor: hsl(146, 100%, 97%);
+
+  --lightmodebtnbghovercolor: hsl(146, 100%, 72%);
+  --darkmodebtnbghovercolor: hsl(0, 0%, 9%);
   
 }
 
