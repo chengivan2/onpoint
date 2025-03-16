@@ -37,6 +37,9 @@
 
   --color-lightmode-btn-bg-color: var(--lightmodebtnbgcolor);
   --color-darkmode-btn-bg-color: var(--darkmodebtnbgcolor);
+
+  --color-lightmode-btn-bg-hover-color: var(--lightmodebtnbghovercolor);
+  --color-darkmode-btn-bg-hover-color: var(--darkmodebtnbghovercolor);
 }
 
 :root {
