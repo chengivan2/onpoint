@@ -11,7 +11,7 @@ export default function ThemeToggle() {
   return (
     <Button
       size="icon"
-      className="rounded-full hover:cursor-pointer active:outline-0"
+      className="outline-0 rounded-full hover:cursor-pointer active:outline-0"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       <FaMoon className="absolute h-12 w-12 -rotate-21 duration-300 scale-100 text-darkmode-bg-color dark:-rotate-0 dark:scale-0" />
