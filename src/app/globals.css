@@ -40,6 +40,9 @@
 
   --color-lightmode-btn-bg-hover-color: var(--lightmodebtnbghovercolor);
   --color-darkmode-btn-bg-hover-color: var(--darkmodebtnbghovercolor);
+
+  --color-lightmode-btn-text-color: var(--lightmodebtntextcolor);
+  --color-darkmode-btn-text-color: var(--darkmodebtntextcolor);
 }
 
 :root {
