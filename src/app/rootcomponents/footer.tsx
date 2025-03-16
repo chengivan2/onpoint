@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FooterLogo from "./footercomponents/logo";
 import FooterMenu from "./footercomponents/menu";
+import Footersocials from "./footercomponents/footersocials";
 
 export default function Footer() {
 
@@ -23,6 +24,7 @@ export default function Footer() {
             © {new Date().getFullYear()} OnPoint Travel Agency
           </span>
           
+          <Footersocials />
         </div>
       </div>
     </footer>
