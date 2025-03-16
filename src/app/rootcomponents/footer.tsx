@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FooterLogo from "./footercomponents/logo";
+import FooterMenu from "./footercomponents/menu";
 
 export default function Footer() {
 
@@ -13,6 +14,8 @@ export default function Footer() {
               <FooterLogo />
             </Link>
           </div>
+
+          <FooterMenu />
 
         </div>
         <div className="px-[2rem] lg:px-[2rem] mt-12 flex flex-wrap items-end justify-between gap-6 border-t dark:border-t py-6">
