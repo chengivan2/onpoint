@@ -14,7 +14,7 @@ export default function FooterMenu() {
               href: "#",
             },
             {
-              title: "Arusha",
+              title: "Dubai",
               href: "#",
             },
             {
