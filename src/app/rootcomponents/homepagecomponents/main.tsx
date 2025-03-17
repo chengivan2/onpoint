@@ -7,7 +7,6 @@ export default function Main() {
     <main className="relative min-w-[100%] min-h-[100vh] px-[1rem]">
       <Header />
       <HerosectionOne />
-    <HeroSection />
   </main>
   )
 }
