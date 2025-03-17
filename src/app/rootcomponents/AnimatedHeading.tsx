@@ -5,13 +5,11 @@ import { TypeAnimation } from 'react-type-animation';
 interface AnimatedHeadingProps {
   words: string[];
   restOfHeading: string;
-  subtitle?: string;
 }
 
 export default function AnimatedHeading({ 
   words, 
-  restOfHeading, 
-  subtitle 
+  restOfHeading 
 }: AnimatedHeadingProps) {
   return (
     <div className="text-center py-12">
@@ -32,11 +30,6 @@ export default function AnimatedHeading({
         </span>
         {restOfHeading}
       </h1>
-      {subtitle && (
-        <p className="text-lg md:text-xl text-[#F5F5F5] dark:text-[#F8F8F8] max-w-2xl mx-auto">
-          {subtitle}
-        </p>
-      )}
     </div>
   );
 } 

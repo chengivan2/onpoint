@@ -11,8 +11,7 @@ export default function HerosectionOne() {
         <div className="relative min-h-full min-w-full flex flex-col justify-center items-center">
             <AnimatedHeading
             words={['Toward', 'Explore', 'Discover']}
-            restOfHeading="More Travel Time"
-            subtitle="With OnPoint" />
+            restOfHeading="More Travel Time" />
         </div>
 
       </div>
