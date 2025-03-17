@@ -1,4 +1,4 @@
-import AnimatedHeading from "@/components/AnimatedHeading";
+import AnimatedHeading from "@/app/rootcomponents/AnimatedHeading";
 
 export default function HerosectionOne() {
   return (
@@ -8,7 +8,7 @@ export default function HerosectionOne() {
 
         <div className="absolute inset-0 bg-[#1A1A1A] opacity-50 rounded-[0.8rem]"></div>
 
-        <div className="relative min-h-full min-w-full flex flex-col">
+        <div className="relative min-h-full min-w-full flex flex-col justify-center items-center">
             <AnimatedHeading
             words={['Toward', 'Explore', 'Discover']}
             restOfHeading="More Travel Time"
