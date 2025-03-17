@@ -5,7 +5,7 @@ export default function HerosectionOne() {
 
         
         <div
-        className="relative min-w-full h-[98vh] rounded-[0.8rem] bg-cover bg-[url(/images/herotestimage.jpg)]">
+        className="relative min-w-full h-[98vh] rounded-[0.8rem] bg-cover bg-center bg-[url(/images/herotestimage.jpg)]">
             <div className="absolute inset-0 bg-[#1A1A1A] opacity-50 rounded-[0.8rem]"></div>
         </div>
         
