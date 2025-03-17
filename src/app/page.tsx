@@ -5,7 +5,6 @@ import Main from "./rootcomponents/homepagecomponents/main";
 export default function Home() {
   return (
     <>
-    <Header />
     <Main />
     <Footer />
     </>
