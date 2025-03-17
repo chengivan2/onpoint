@@ -46,7 +46,7 @@ export default function Header() {
       px-4 py-3 
       bg-lightmode-header-bg-color dark:bg-darkmode-header-bg-color 
       shadow-md
-      transition-transform duration-300
+      transition-transform duration-300 h-20
       ${isVisible ? 'translate-y-0' : '-translate-y-full'}
       ${isMenuOpen ? '!translate-y-0' : ''}
     `}>

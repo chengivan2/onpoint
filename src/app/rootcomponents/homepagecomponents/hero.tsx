@@ -12,7 +12,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative bg-primary-light dark:bg-primary-dark overflow-hidden">
+    <section className="mt-20 relative bg-primary-light dark:bg-primary-dark overflow-hidden">
       {/* Background shape */}
       <div className="absolute top-0 right-0 w-1/2 h-full">
         <div className="w-full h-full bg-primary/10 dark:bg-primary/20 transform -skew-x-12" />
