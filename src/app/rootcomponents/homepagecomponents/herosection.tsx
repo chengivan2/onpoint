@@ -4,7 +4,7 @@ export default function HerosectionOne() {
     <section className='relative px-[1.5rem] py-[2rem] min-w-full min-h-[100vh]'>
 
         <div
-        className="min-w-full min-h-full rounded-[0.8rem]">
+        className="min-w-full min-h-full rounded-[0.8rem] bg-cover bg-[url(/images/herotestimage.jpg)]">
             
         </div>
         
