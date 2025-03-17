@@ -3,13 +3,13 @@
 import { TypeAnimation } from 'react-type-animation';
 
 interface AnimatedHeadingProps {
-  firstWord: string;
+  words: string[];
   restOfHeading: string;
   subtitle?: string;
 }
 
 export default function AnimatedHeading({ 
-  firstWord, 
+  words, 
   restOfHeading, 
   subtitle 
 }: AnimatedHeadingProps) {
@@ -18,11 +18,13 @@ export default function AnimatedHeading({
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
         <span className="inline-block">
           <TypeAnimation
-            sequence={[firstWord]}
+            sequence={[
+              ...words.flatMap(word => [word, 2000]),
+            ]}
             wrapper="span"
             speed={50}
-            repeat={0}
-            cursor={false}
+            repeat={Infinity}
+            cursor={true}
             className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
               text-transparent bg-clip-text 
               animate-gradient"
