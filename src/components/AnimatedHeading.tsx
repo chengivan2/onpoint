@@ -25,7 +25,7 @@ export default function AnimatedHeading({
             speed={50}
             repeat={Infinity}
             cursor={true}
-            className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
+            className="text-[1.5rem] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
               text-transparent bg-clip-text 
               animate-gradient"
           />
