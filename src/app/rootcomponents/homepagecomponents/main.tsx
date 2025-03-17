@@ -1,5 +1,4 @@
 import Header from "../header";
-import HeroSection from "./hero";
 import HerosectionOne from "./herosection";
 
 export default function Main() {
