@@ -6,7 +6,7 @@ export default function HerosectionOne() {
 
       <div className="relative px-[0.1rem] py-[0.1rem] min-w-full h-[98vh] rounded-[0.8rem] bg-cover bg-center bg-[url(/images/herobgimage.jpg)]">
 
-        <div className="absolute inset-0 bg-[#1A1A1A] opacity-50 rounded-[0.8rem]"></div>
+        <div className="absolute inset-0 bg-[#1A1A1A] opacity-40 dark:opacity-50 rounded-[0.8rem]"></div>
 
         <div className="relative min-h-full min-w-full flex flex-col justify-center items-center">
             <AnimatedHeading
