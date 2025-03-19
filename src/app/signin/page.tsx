@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 import { signInWithEmail } from "@/utils/auth";
 import { supabase } from "@/lib/supabaseClient";
 import Header from "../rootcomponents/header";
-import { FaGoogle, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaGoogle } from "react-icons/fa6";
 
 export default function SignInPage() {
   const [email, setEmail] = useState("");
@@ -73,20 +73,6 @@ export default function SignInPage() {
                 className="rounded-full bg-lightmode-btn-bg-color dark:bg-darkmode-btn-bg-color">
                 <FaGoogle className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color" />
                 <span className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color">Continue with Google</span>
-              </Button>
-
-              <Button
-                type="button"
-                className="rounded-full bg-lightmode-btn-bg-color dark:bg-darkmode-btn-bg-color">
-                <FaXTwitter className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color" />
-                <span className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color">Continue with X</span>
-              </Button>
-
-              <Button
-                type="button"
-                className="rounded-full bg-lightmode-btn-bg-color dark:bg-darkmode-btn-bg-color">
-                <FaLinkedin className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color" />
-                <span className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color">Continue with LinkedIn</span>
               </Button>
 
             </div>
