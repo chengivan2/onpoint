@@ -78,7 +78,7 @@ export default function SignInPage() {
             <div className="mt-6 flex flex-col gap-3">
               <Button 
                 type="button"
-                className="rounded-full bg-lightmode-btn-bg-color dark:bg-darkmode-btn-bg-color">
+                className="rounded-full cursor-pointer bg-lightmode-btn-bg-color dark:bg-darkmode-btn-bg-color hover:bg-lightmode-btn-bg-hover-color hover:dark:bg-darkmode-btn-bg-hover-color">
                 <FaGoogle className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color" />
                 <span className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color">Continue with Google</span>
               </Button>
@@ -87,7 +87,7 @@ export default function SignInPage() {
 
             <div className="flex items-center my-8">
               <div className="flex-grow border-t border-gray-300 dark:border-gray-700"></div>
-              <span className="mx-4 text-gray-500 dark:text-gray-400">OR</span>
+              <span className="mx-4 text-lightmode-text-color dark:text-darkmode-text-color">OR</span>
               <div className="flex-grow border-t border-gray-300 dark:border-gray-700"></div>
             </div>
 
@@ -133,8 +133,14 @@ export default function SignInPage() {
 
               {error && <p className="text-red-500">{error}</p>}
 
-              <Button className="w-full" type="submit" disabled={loading}>
-                {loading ? "Signing you in..." : "Sign In"}
+              <Button
+                className="w-full cursor-pointer bg-lightmode-btn-bg-color dark:bg-darkmode-btn-bg-color hover:bg-lightmode-btn-bg-hover-color hover:dark:bg-darkmode-btn-bg-hover-color"
+                type="submit"
+                disabled={loading}
+                >
+                    <span className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color">
+                        {loading ? "Signing you in..." : "Sign In"}
+                    </span>
               </Button>
             </div>
           </div>
