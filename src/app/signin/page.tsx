@@ -12,6 +12,7 @@ import { signInWithEmail } from "@/utils/auth";
 import { supabase } from "@/lib/supabaseClient";
 import Header from "../rootcomponents/header";
 import { FaGoogle } from "react-icons/fa6";
+import Image from "next/image";
 
 export default function SignInPage() {
   const [email, setEmail] = useState("");
@@ -51,7 +52,12 @@ export default function SignInPage() {
     <>
       <Header />
 
-      <section className="flex min-h-screen px-4 py-16 md:py-32 bg-transparent">
+      <section className="flex flex-col lg:flex-row mt-16 min-h-screen bg-transparent">
+        <div className="relative min-h-full bg-center bg-cover bg-[url(/images/signin.jpg)] flex-1/2">
+            
+        </div>
+
+        <div className="relative min-h-full flex flex-row justify-center items-center flex-1/2">
         <form
           onSubmit={handleSignIn}
           className="bg-lightmode-auth-bg-color dark:bg-darkmode-auth-bg-color m-auto h-fit w-full max-w-sm rounded-[0.85rem] p-0.5 shadow-md"
@@ -140,6 +146,7 @@ export default function SignInPage() {
             </p>
           </div>
         </form>
+        </div>
       </section>
     </>
   );
