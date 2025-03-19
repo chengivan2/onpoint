@@ -54,6 +54,8 @@ export default function SignInPage() {
 
       <section className="flex flex-col lg:flex-row mt-16 min-h-screen bg-transparent">
         <div className="relative min-h-full bg-center bg-cover bg-[url(/images/signin.jpg)] flex-1/2">
+        <div className="absolute inset-0 bg-darkmode-bg-color opacity-10 dark:opacity-20"></div>
+
             
         </div>
 
