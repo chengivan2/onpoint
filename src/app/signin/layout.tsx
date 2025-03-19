@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import { ThemeProvider } from "next-themes";
 import ScrollToTop from "../rootcomponents/ScrollToTop";
 import { inter } from '../rootcomponents/fonts';

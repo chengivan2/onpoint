@@ -49,6 +49,9 @@
   --color-lightmode-footertext-active-color: var(--lightmodefootertextactive);
   --color-darkmode-footertext-active-color: var(--darkmodefootertextactive);
 
+  --color-lightmode-auth-bg-color: var(--lightmodeauthbgcolor);
+  --color-darkmode-auth-bg-color: var(--darkmodeauthbgcolor);
+
 }
 
 :root {
@@ -95,6 +98,9 @@
 
   --lightmodefootertextactive: hsl(146, 100%, 72%);
   --darkmodefootertextactive: hsl(146, 100%, 72%);
+
+  --lightmodeauthbgcolor: hsl(0, 0%, 96%);
+  --darkmodeauthbgcolor: hsl(144, 41%, 5%);
   
 }
 
