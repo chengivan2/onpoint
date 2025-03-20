@@ -14,7 +14,7 @@ export default function HerosectionOne() {
         </div>
 
         <div className="relative min-w-full flex flex-col justify-center items-center">
-          <h4>Work Hard Play Hard</h4>
+          <h3>Work Hard Play Hard</h3>
         </div>
 
       </div>
