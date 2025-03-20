@@ -12,6 +12,11 @@ export default function HerosectionOne() {
             restOfHeading="More Travel Time"
           />
         </div>
+
+        <div className="relative min-h-full min-w-full flex flex-col justify-center items-center">
+          <h4>Work Hard Play Hard</h4>
+        </div>
+        
       </div>
     </section>
   );
