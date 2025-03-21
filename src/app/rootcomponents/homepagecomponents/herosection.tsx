@@ -14,7 +14,7 @@ export default function HerosectionOne() {
         </div>
 
         <div className="relative min-w-full flex flex-col justify-center items-center">
-          <h3>Straigh To the Point</h3>
+          <h3>Straight To the Point</h3>
         </div>
 
       </div>
