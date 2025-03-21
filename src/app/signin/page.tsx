@@ -12,7 +12,6 @@ import { signInWithEmail } from "@/utils/auth";
 import { supabase } from "@/lib/supabaseClient";
 import Header from "../rootcomponents/header";
 import { FaGoogle } from "react-icons/fa6";
-import Image from "next/image";
 
 export default function SignInPage() {
   const [email, setEmail] = useState("");

@@ -67,16 +67,16 @@ export default function SignUpPage() {
                   type="button"
                   className="rounded-full cursor-pointer bg-lightmode-btn-bg-color dark:bg-darkmode-bg-color hover:bg-lightmode-btn-bg-hover-color hover:dark:bg-darkmode-btn-bg-hover-color"
                 >
-                  <FaGoogle />
-                  <span>Sign up with Google</span>
+                  <FaGoogle className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color" />
+                  <span className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color">Sign up with Google</span>
                 </Button>
 
                 <Button
                   type="button"
                   className="rounded-full cursor-pointer bg-lightmode-btn-bg-color dark:bg-darkmode-bg-color hover:bg-lightmode-btn-bg-hover-color hover:dark:bg-darkmode-btn-bg-hover-color"
                 >
-                  <FaXTwitter />
-                  <span>Microsoft</span>
+                  <FaXTwitter className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color" />
+                  <span className="text-lightmode-btn-text-color dark:text-darkmode-btn-text-color">Microsoft</span>
                 </Button>
               </div>
 
