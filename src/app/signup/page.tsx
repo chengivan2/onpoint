@@ -157,7 +157,7 @@ export default function SignUpPage() {
 
             <div className="bg-muted p-3">
               <p className="text-accent-foreground text-center text-sm">
-                Have an account ?
+                Have an account?
                 <Button asChild variant="link" className="px-2">
                   <Link href="/signin">Sign In</Link>
                 </Button>
