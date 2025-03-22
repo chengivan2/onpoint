@@ -40,6 +40,9 @@
   --color-lightmode-btn-text-color: var(--lightmodebtntextcolor);
   --color-darkmode-btn-text-color: var(--darkmodebtntextcolor);
 
+  --color-lightmode-secondary-btn-text-color: var(--lightmodesecondarybtntextcolor);
+  --color-darkmode-secondary-btn-text-color: var(--darkmodesecondarybtntextcolor);
+
   --color-lightmode-footertext-color: var(--lightmodefootertextcolor);
   --color-darkmode-footertext-color: var(--darkmodefootertextcolor);
 
