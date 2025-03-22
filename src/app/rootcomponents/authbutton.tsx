@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import { FiLogIn, FiUser } from "react-icons/fi";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function AuthButton() {
   const [user, setUser] = useState<{ id: string } | null>(null);
@@ -16,9 +17,11 @@ export default function AuthButton() {
 
     checkUser();
 
-    const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user || null);
-    });
+    const { data: authListener } = supabase.auth.onAuthStateChange(
+      (_event, session) => {
+        setUser(session?.user || null);
+      }
+    );
 
     return () => {
       authListener?.subscription.unsubscribe();
@@ -27,12 +30,12 @@ export default function AuthButton() {
 
   return user ? (
     <Link
-      href="/dashboard"
-      className="flex items-center gap-2 px-5 py-2 rounded-lg bg-opacity-20 backdrop-blur-md border border-white/20 text-white transition hover:bg-opacity-30"
-      style={{ background: "rgba(255, 255, 255, 0.1)" }} // Glassmorphism effect
-    >
-      <FiUser size={20} />
-      Dashboard
+      href="/dashboard">
+      <Button
+        className="flex items-center gap-2 px-5 py-2 rounded-lg bg-opacity-20 bg-lightmode-auth-bg-color dark:bg-darkmode-auth-bg-color backdrop-blur-md border border-white/20 text-lightmode-text-color duration-250 hover:bg-opacity-30">
+        <FiUser size={20} />
+        Dashboard
+      </Button>
     </Link>
   ) : (
     <Link

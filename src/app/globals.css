@@ -90,6 +90,9 @@
   --lightmodebtntextcolor: hsl(0, 0%, 96%);
   --darkmodebtntextcolor: hsl(0, 0%, 96%);
 
+  --lightmodesecondarybtntextcolor: hsl(0, 0%, 5%);
+  --darkmodesecondarybtntextcolor: hsl(0, 0%, 96%);
+
   --lightmodefootertextcolor: hsl(0, 0%, 5%);
   --darkmodefootertextcolor: hsl(0, 0%, 96%);
 
