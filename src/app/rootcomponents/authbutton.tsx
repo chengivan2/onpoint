@@ -29,22 +29,26 @@ export default function AuthButton() {
   }, []);
 
   return user ? (
-    <Link
-      href="/dashboard">
-      <Button
-        className="flex items-center gap-2 px-5 py-2 rounded-lg bg-opacity-20 bg-lightmode-auth-bg-color dark:bg-darkmode-auth-bg-color backdrop-blur-md border border-white/20 text-lightmode-text-color duration-250 hover:bg-opacity-30">
-        <FiUser size={20} />
-        Dashboard
+    <Link href="/dashboard" className="cursor-pointer">
+      <Button className="cursor-pointer flex items-center gap-2 px-5 py-2 rounded-lg bg-opacity-20 bg-lightmode-auth-bg-color dark:bg-darkmode-auth-bg-color hover:bg-opacity-30">
+        <span className="text-lightmode-secondary-btn-text-color dark:text-darkmode-secondary-btn-text-color">
+          <FiUser size={20} />
+        </span>
+        <span className="text-lightmode-secondary-btn-text-color dark:text-darkmode-secondary-btn-text-color">
+          Dashboard
+        </span>
       </Button>
     </Link>
   ) : (
-    <Link
-      href="/signin"
-      className="flex items-center gap-2 px-5 py-2 rounded-lg bg-opacity-20 backdrop-blur-md border border-white/20 text-white transition hover:bg-opacity-30"
-      style={{ background: "rgba(255, 255, 255, 0.1)" }}
-    >
-      <FiLogIn size={20} />
-      Sign In
+    <Link href="/signin" className="cursor-pointer">
+      <Button className="cursor-pointer flex items-center gap-2 px-5 py-2 rounded-lg bg-opacity-20 bg-lightmode-auth-bg-color dark:bg-darkmode-auth-bg-color hover:bg-opacity-30">
+        <span className="text-lightmode-secondary-btn-text-color dark:text-darkmode-secondary-btn-text-color">
+          <FiLogIn size={20} />
+        </span>
+        <span className="text-lightmode-secondary-btn-text-color dark:text-darkmode-secondary-btn-text-color">
+          Sign In
+        </span>
+      </Button>
     </Link>
   );
 }
