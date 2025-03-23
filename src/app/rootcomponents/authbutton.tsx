@@ -30,7 +30,7 @@ export default function AuthButton() {
 
   return user ? (
     <Link href="/dashboard" className="cursor-pointer">
-      <Button className="cursor-pointer flex items-center gap-2 px-5 py-2 rounded-lg bg-opacity-20 bg-lightmode-auth-bg-color dark:bg-darkmode-auth-bg-color hover:bg-opacity-30">
+      <Button className="cursor-pointer flex items-center gap-2 px-5 py-2 rounded-full bg-lightmode-auth-bg-color dark:bg-darkmode-auth-bg-color hover:bg-[#1a1a1a]">
         <span className="text-lightmode-secondary-btn-text-color dark:text-darkmode-secondary-btn-text-color">
           <FiUser size={20} />
         </span>
@@ -41,7 +41,7 @@ export default function AuthButton() {
     </Link>
   ) : (
     <Link href="/signin" className="cursor-pointer">
-      <Button className="cursor-pointer flex items-center gap-2 px-5 py-2 rounded-lg bg-opacity-20 bg-lightmode-auth-bg-color dark:bg-darkmode-auth-bg-color hover:bg-opacity-30">
+      <Button className="cursor-pointer flex items-center gap-2 px-5 py-2 rounded-full bg-lightmode-auth-bg-color dark:bg-darkmode-auth-bg-color hover:bg-[#1a1a1a]">
         <span className="text-lightmode-secondary-btn-text-color dark:text-darkmode-secondary-btn-text-color">
           <FiLogIn size={20} />
         </span>
