@@ -30,7 +30,7 @@ export default function AuthButton() {
 
   return user ? (
     <Link href="/dashboard" className="cursor-pointer">
-      <Button className="group shadow-none cursor-pointer flex items-center gap-2 px-5 py-2 rounded-full bg-transparent hover:bg-lightmode-secondary-btn-bg-hover-color dark:hover:bg-darkmode-secondary-btn-bg-hover-color">
+      <Button className="min-w-full group shadow-none cursor-pointer flex items-center gap-2 px-5 py-2 rounded-full bg-transparent hover:bg-lightmode-secondary-btn-bg-hover-color dark:hover:bg-darkmode-secondary-btn-bg-hover-color">
         <span className="flex flex-row gap-[0.5rem] justify-center items-center text-lightmode-secondary-btn-text-color group-hover:text-lightmode-secondary-btn-text-hover-color dark:text-darkmode-secondary-btn-text-color dark:group-hover:text-darkmode-secondary-btn-text-hover-color">
           <FiUser size={20} />
           Dashboard
@@ -39,7 +39,7 @@ export default function AuthButton() {
     </Link>
   ) : (
     <Link href="/signin" className="cursor-pointer">
-      <Button className="group shadow-none cursor-pointer flex items-center gap-2 px-5 py-2 rounded-full bg-transparent hover:bg-lightmode-secondary-btn-bg-hover-color dark:hover:bg-darkmode-secondary-btn-bg-hover-color">
+      <Button className="min-w-full group shadow-none cursor-pointer flex items-center gap-2 px-5 py-2 rounded-full bg-transparent hover:bg-lightmode-secondary-btn-bg-hover-color dark:hover:bg-darkmode-secondary-btn-bg-hover-color">
         <span className="flex flex-row gap-[0.5rem] justify-center items-center text-lightmode-secondary-btn-text-color group-hover:text-lightmode-secondary-btn-text-hover-color dark:text-darkmode-secondary-btn-text-color dark:group-hover:text-darkmode-secondary-btn-text-hover-color">
           <FiLogIn size={20} />
           Sign In
