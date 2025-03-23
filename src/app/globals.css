@@ -96,6 +96,9 @@
   --lightmodesecondarybtntextcolor: hsl(0, 0%, 5%);
   --darkmodesecondarybtntextcolor: hsl(0, 0%, 96%);
 
+  --lightmodesecondarybtntexthovercolor: hsl(0, 0%, 96%);
+  --darkmodesecondarybtntexthovercolor: hsl(0, 0%, 96%);
+
   --lightmodesecondarybtnbghovercolor: hsla(0, 0%, 10%, 0.5);
   --darkmodesecondarybtnbghovercolor: hsla(0, 0%, 9%, 0.5);
 
