@@ -1,3 +1,3 @@
-# Travely
+# OnPoint
 
-## Travel Agency Website
+## OnPoint Agency Website

@@ -5,8 +5,8 @@ import ScrollToTop from "../rootcomponents/ScrollToTop";
 import { inter } from '../rootcomponents/fonts';
 
 export const metadata: Metadata = {
-  title: "Sign In - Travely",
-  description: "Sign in to manage your Travely account",
+  title: "Sign In - OnPoint",
+  description: "Sign in to manage your OnPoint account",
 };
 
 export default function RootLayout({

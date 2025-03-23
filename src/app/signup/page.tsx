@@ -55,7 +55,7 @@ export default function SignUpPage() {
                   <HeaderLogo />
                 </Link>
                 <h1 className="text-title mb-1 mt-4 text-xl font-semibold">
-                  Create a Travely Account
+                  Create a OnPoint Account
                 </h1>
                 <p className="text-sm">
                   Welcome! Create an account to begin your adventure

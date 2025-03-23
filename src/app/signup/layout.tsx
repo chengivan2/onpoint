@@ -5,8 +5,8 @@ import ScrollToTop from "../rootcomponents/ScrollToTop";
 import { inter } from '../rootcomponents/fonts';
 
 export const metadata: Metadata = {
-  title: "Sign Up - Travely",
-  description: "Sign up to get great discounts from Travely",
+  title: "Sign Up - OnPoint",
+  description: "Sign up to get great discounts from OnPoint",
 };
 
 export default function RootLayout({

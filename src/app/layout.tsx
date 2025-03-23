@@ -5,7 +5,7 @@ import ScrollToTop from './rootcomponents/ScrollToTop';
 import { inter } from './rootcomponents/fonts';
 
 export const metadata: Metadata = {
-  title: "Travely",
+  title: "OnPoint",
   description: "We will take you anywhere",
 };
 
