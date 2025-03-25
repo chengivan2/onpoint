@@ -73,7 +73,7 @@
 
 :root {
   --font-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
-  --font-heading: 'Alegreya Sans SC', var(--font-system);
+  --font-heading: 'Alegreya Sans', var(--font-system);
   --font-sans: 'Inter', var(--font-system);
 
 
