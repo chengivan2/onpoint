@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${alegreyaSans} ${inter.variable}`}>
-      <body className={`font-sans antialiased flex flex-col bg-lightmode-bg-color dark:bg-darkmode-bg-color`}>
+      <body className={`antialiased flex flex-col bg-lightmode-bg-color dark:bg-darkmode-bg-color`}>
         <ThemeProvider
         attribute="class"
         enableSystem
