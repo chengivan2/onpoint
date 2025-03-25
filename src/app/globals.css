@@ -9,6 +9,8 @@
   --color-darkmode-bg-color: var(--darkmodebgcolor);
   --color-lightmode-text-color: var(--lightmodetextcolor);
   --color-darkmode-text-color: var(--darkmodetextcolor);
+  --color-lightmode-heading-color: var(--lightmodeheadingcolor);
+  --color-darkmode-heading-color: var(--darkmodeheadingcolor);
 
   --color-lightmode-header-bg-color: var(--lightmodeheaderbgcolor);
   --color-darkmode-header-bg-color: var(--darkmodeheaderbgcolor);
