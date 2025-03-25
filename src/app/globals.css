@@ -5,6 +5,12 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+
+  --font-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+  --font-heading: 'Alegreya Sans SC', var(--font-system);
+  --font-sans: 'Inter', var(--font-system);
+
+
   --color-lightmode-bg-color: var(--lightmodebgcolor);
   --color-darkmode-bg-color: var(--darkmodebgcolor);
   --color-lightmode-text-color: var(--lightmodetextcolor);

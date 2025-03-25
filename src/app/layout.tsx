@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import ScrollToTop from './rootcomponents/ScrollToTop';
-import { inter } from './rootcomponents/fonts';
+import { inter, alegreyaSans } from './rootcomponents/fonts';
 
 export const metadata: Metadata = {
   title: "OnPoint",
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${alegreyaSans} ${inter.variable}`}>
       <body className={`font-sans antialiased flex flex-col bg-lightmode-bg-color dark:bg-darkmode-bg-color`}>
         <ThemeProvider
         attribute="class"
