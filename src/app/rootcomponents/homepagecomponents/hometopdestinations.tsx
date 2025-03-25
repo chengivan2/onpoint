@@ -2,8 +2,8 @@ export default function HomeTopDestinations() {
   return (
     <section className="relative flex flex-col min-w-full">
       <div className="flex relative min-w-full justify-center">
-      <h2>Top Destinations</h2>
+        <h2 className="text-4xl font-black text-lightmode-heading-color dark:text-darkmode-heading-color">Top Destinations</h2>
       </div>
     </section>
-  )
+  );
 }
