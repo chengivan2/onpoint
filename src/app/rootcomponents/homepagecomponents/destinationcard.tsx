@@ -34,7 +34,7 @@ export default async function HomeDestinationCard() {
             key={destination.id}
             className="group relative overflow-hidden rounded-xl transition-all duration-300 transform hover:scale-[1.02]"
           >
-            <div className="relative z-10 h-full flex flex-col bg-green-50/20 dark:bg-green-900/20 backdrop-blur-sm border border-white/10 dark:border-green-900/30 rounded-xl p-6 transition-all duration-300 hover:bg-green-50/30 dark:hover:bg-green-900/30">
+            <div className="animate-fade-up relative z-10 h-full flex flex-col bg-white/30 dark:bg-green-900/20 backdrop-blur-md border border-gray-200/40 dark:border-green-900/30 rounded-xl p-6 transition-all duration-300 hover:bg-white/40 dark:hover:bg-green-900/30 shadow-sm hover:shadow-md">
               <div className="relative aspect-video rounded-lg overflow-hidden mb-4">
                 {imageUrl ? (
                   <Image
