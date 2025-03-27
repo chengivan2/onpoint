@@ -24,9 +24,9 @@ export default async function HomeDestinationCard() {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 py-[4rem] min-h-[100vh]">
       {(data as Destination[]).map((destination) => {
-        const isValidImageUrl = destination.main_image_url?.startsWith("http");
+        const isValidImageUrl = destination.main_image_url?.startsWith("https");
         const imageUrl = isValidImageUrl ? destination.main_image_url : null;
 
         return (
@@ -34,7 +34,7 @@ export default async function HomeDestinationCard() {
             key={destination.id}
             className="group relative overflow-hidden rounded-xl transition-all duration-300 transform hover:scale-[1.02]"
           >
-            <div className="animate-fade-up relative z-10 h-full flex flex-col bg-white/30 dark:bg-green-900/20 backdrop-blur-md border border-gray-200/40 dark:border-green-900/30 rounded-xl p-6 transition-all duration-300 hover:bg-white/40 dark:hover:bg-green-900/30 shadow-sm hover:shadow-md">
+            <div className="animate-fade-up relative cursor-pointer z-10 h-full flex flex-col bg-lightmode-header-bg-color/30 dark:bg-green-900/20 backdrop-blur-md border border-gray-200/40 dark:border-green-900/30 rounded-xl p-6 transition-all duration-300 hover:bg-white/40 dark:hover:bg-green-900/30 shadow-sm hover:shadow-md">
               <div className="relative aspect-video rounded-lg overflow-hidden mb-4">
                 {imageUrl ? (
                   <Image
