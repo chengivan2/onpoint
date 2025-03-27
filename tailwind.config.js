@@ -7,8 +7,7 @@ module.exports = {
     // Add other file paths as needed
   ],
   plugins: [
-    require("tailwindcss-animated"), // Add plugins here
-  ],
+],
   corePlugins: {
     preflight: false, // Optional: if you want to disable default styles
   },

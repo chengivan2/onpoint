@@ -10,12 +10,16 @@ interface Destination {
 }
 
 export default async function HomeDestinationCard() {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   const { data, error } = await supabase
     .from("destinations")
     .select("id, name, description, location, main_image_url");
 
   if (error) {
-    console.error("Error fetching destinations:", error);
     return <div className="text-red-500 p-4">Error loading destinations</div>;
   }
 
@@ -25,16 +29,15 @@ export default async function HomeDestinationCard() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 py-[4rem] min-h-[100vh]">
-      {(data as Destination[]).map((destination) => {
+      {(data as Destination[]).map((destination, index) => {
         const isValidImageUrl = destination.main_image_url?.startsWith("https");
         const imageUrl = isValidImageUrl ? destination.main_image_url : null;
 
         return (
           <div
-            key={destination.id}
-            className="group relative overflow-hidden rounded-xl transition-all duration-300 transform hover:scale-[1.02]"
+            className="group relative cursor-pointer overflow-hidden rounded-xl transition-all duration-300 transform hover:scale-[1.02]"
           >
-            <div className="animate-fade-up relative cursor-pointer z-10 h-full flex flex-col bg-lightmode-header-bg-color/30 dark:bg-green-900/20 backdrop-blur-md border border-gray-200/40 dark:border-green-900/30 rounded-xl p-6 transition-all duration-300 hover:bg-white/40 dark:hover:bg-green-900/30 shadow-sm hover:shadow-md">
+            <div className="animate-fade-up relative z-10 h-full flex flex-col bg-lightmode-header-bg-color/30 dark:bg-green-900/20 backdrop-blur-md border border-gray-200/40 dark:border-green-900/30 rounded-xl p-6 transition-all duration-300 hover:bg-white/40 dark:hover:bg-green-900/30 shadow-sm hover:shadow-md">
               <div className="relative aspect-video rounded-lg overflow-hidden mb-4">
                 {imageUrl ? (
                   <Image
