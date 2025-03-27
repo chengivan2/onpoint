@@ -1,4 +1,5 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */ 
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -6,7 +7,7 @@ module.exports = {
     // Add other file paths as needed
   ],
   plugins: [
-    require("tailwindcss-animate"), // Add plugins here
+    require("tailwindcss-animated"), // Add plugins here
   ],
   corePlugins: {
     preflight: false, // Optional: if you want to disable default styles
