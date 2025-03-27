@@ -29,7 +29,7 @@ export default async function HomeDestinationCard() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 py-[4rem] min-h-[100vh]">
-      {(data as Destination[]).map((destination, index) => {
+      {(data as Destination[]).map((destination) => {
         const isValidImageUrl = destination.main_image_url?.startsWith("https");
         const imageUrl = isValidImageUrl ? destination.main_image_url : null;
 
