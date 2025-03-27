@@ -35,6 +35,7 @@ export default async function HomeDestinationCard() {
 
         return (
           <div
+            key={destination.id}
             className="group relative cursor-pointer overflow-hidden rounded-xl transition-all duration-300 transform hover:scale-[1.02]"
           >
             <div className="animate-fade-up relative z-10 h-full flex flex-col bg-lightmode-header-bg-color/30 dark:bg-green-900/20 backdrop-blur-md border border-gray-200/40 dark:border-green-900/30 rounded-xl p-6 transition-all duration-300 hover:bg-white/40 dark:hover:bg-green-900/30 shadow-sm hover:shadow-md">
