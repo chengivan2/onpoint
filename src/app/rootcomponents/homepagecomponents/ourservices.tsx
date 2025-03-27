@@ -1,4 +1,4 @@
-export default function ServicesSection() {
+export default function OurServicesSection() {
     const services = [
       {
         icon: '⛅',
