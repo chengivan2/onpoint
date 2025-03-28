@@ -84,6 +84,8 @@ export default function BookingSection() {
           </div>
 
           <div className="relative space-y-6">
+          <div className="absolute z-9 left-[3rem] top-18 bottom-20 w-0.5 bg-green-500/4 dark:bg-green-300/4"></div>
+
             {steps.map((step, index) => (
               <div
                 key={index}
@@ -127,7 +129,7 @@ export default function BookingSection() {
                 </span>
               </div>
 
-              <div className="bg-[url(https://res.cloudinary.com/doqbnfais/image/upload/v1743186817/onPoint%20website%20concept/website%20assets/website%20images/website%20design%20and%20stock%20photos/friends-eiffel-tower_evy9gv.jpg)] bg-cover bg-right-top lg:bg-center h-[50vh] rounded-xl">
+              <div className="bg-[url(https://res.cloudinary.com/doqbnfais/image/upload/v1743186817/onPoint%20website%20concept/website%20assets/website%20images/website%20design%20and%20stock%20photos/friends-eiffel-tower_evy9gv.jpg)] bg-cover bg-right-top lg:bg-center h-[40vh] lg:h-[50vh] rounded-xl">
                 
               </div>
 
