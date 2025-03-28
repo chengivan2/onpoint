@@ -2,7 +2,7 @@ import Header from "../header";
 import BookingSteps from "./bookingsteps";
 import HerosectionOne from "./herosection";
 import HomeTopDestinations from "./hometopdestinations";
-import HomeTripCards from "./hometrips";
+import HomeTopTrips from "./hometoptrips";
 import OurServicesSection from "./ourservices";
 
 export default function Main() {
@@ -13,7 +13,7 @@ export default function Main() {
       <OurServicesSection />
       <HomeTopDestinations />
       <BookingSteps />
-      <HomeTripCards />
+      <HomeTopTrips />
   </main>
   )
 }

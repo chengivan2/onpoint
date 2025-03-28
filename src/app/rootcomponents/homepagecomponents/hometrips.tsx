@@ -36,7 +36,7 @@ export default async function HomeTripCards() {
   }
 
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-16 bg-green-50/20 dark:bg-green-900/10">
+    <div className="py-16 px-4 md:px-8 lg:px-16 bg-green-50/20 dark:bg-green-900/10">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {trips.map((trip) => (
@@ -109,6 +109,6 @@ export default async function HomeTripCards() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
