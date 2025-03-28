@@ -1,25 +1,25 @@
 export default function OurServicesSection() {
   const services = [
     {
-      icon: "⛅",
+      icon: "🚐",
       title: "Hire a vehicle",
       description:
         "Book a land cruiser for tough terrains or a safari van to cruise in a game drive.",
     },
     {
-      icon: "✈️",
+      icon: "👰‍♀️",
       title: "The Best Weddings",
       description:
         "Need a venue for your wedding? Don't worry we've got your back.",
     },
     {
-      icon: "📅",
+      icon: "🛌",
       title: "Accommodation",
       description:
         "Choose among the best suites. We have both budgeted and luxury options.",
     },
     {
-      icon: "⚙️",
+      icon: "📝",
       title: "Make Your Own Trip",
       description:
         "Make your own adventure by telling us your exact preferences. We'll make it happen",
