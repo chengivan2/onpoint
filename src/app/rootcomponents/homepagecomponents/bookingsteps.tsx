@@ -127,7 +127,7 @@ export default function BookingSection() {
                 </span>
               </div>
 
-              <div className="bg-[url(https://res.cloudinary.com/doqbnfais/image/upload/v1743186817/onPoint%20website%20concept/website%20assets/website%20images/website%20design%20and%20stock%20photos/friends-eiffel-tower_evy9gv.jpg)] bg-cover bg-right-top lg:bg-center h-48 rounded-xl">
+              <div className="bg-[url(https://res.cloudinary.com/doqbnfais/image/upload/v1743186817/onPoint%20website%20concept/website%20assets/website%20images/website%20design%20and%20stock%20photos/friends-eiffel-tower_evy9gv.jpg)] bg-cover bg-right-top lg:bg-center h-[50vh] rounded-xl">
                 
               </div>
 
