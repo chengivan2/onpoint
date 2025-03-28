@@ -2,21 +2,28 @@ export default function BookingSection() {
   const steps = [
     {
       icon: (
-        <svg
-          className="w-6 h-6 text-green-600 dark:text-green-300"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
-          />
-        </svg>
+        <svg 
+  className="w-6 h-6 text-green-600 dark:text-green-300" 
+  fill="none" 
+  stroke="currentColor" 
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    strokeWidth="2" 
+    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+  />
+  <path 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    strokeWidth="2" 
+    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+  />
+</svg>
       ),
-      title: "Choose Destination",
+      title: "1. Choose Destination",
       description:
         "Select your perfect destination from our curated list of amazing locations",
     },
@@ -36,7 +43,7 @@ export default function BookingSection() {
           />
         </svg>
       ),
-      title: "Make Payment",
+      title: "2. Make Payment",
       description:
         "Secure and easy payment process with multiple options available",
     },
@@ -56,7 +63,7 @@ export default function BookingSection() {
           />
         </svg>
       ),
-      title: "Reach Airport",
+      title: "3. Reach Airport",
       description:
         "Prepare for your adventure and arrive at the airport on your selected date",
     },
@@ -77,15 +84,12 @@ export default function BookingSection() {
           </div>
 
           <div className="relative space-y-6">
-            {/* Vertical connecting line */}
-            <div className="absolute left-6 top-0 h-full w-px bg-green-200/50 dark:bg-green-700/30"></div>
-
             {steps.map((step, index) => (
               <div
                 key={index}
                 className={`animate-fade-in-up delay-${
                   index * 100
-                } relative z-10 p-6 rounded-xl border border-green-100/30 dark:border-green-900/30 shadow-lg hover:shadow-xl transition-all duration-300`}
+                } relative z-10 p-6 rounded-xl transition-all duration-300`}
               >
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -107,7 +111,7 @@ export default function BookingSection() {
 
         {/* Image Card */}
         <div className="flex-1 w-full max-w-xl animate-fade-in-right delay-300">
-          <div className="relative rounded-2xl shadow-xl shadow-green-100/40 dark:shadow-green-900/20 p-8 border border-green-100/30 dark:border-green-900/30">
+          <div className="relative rounded-2xl shadow-xl border-green-100/30 dark:border-green-900/30 hover:shadow-xl  p-8 border">
             <div className="space-y-6">
               <div className="flex justify-between items-start">
                 <div>
@@ -123,8 +127,8 @@ export default function BookingSection() {
                 </span>
               </div>
 
-              <div className="bg-green-100/50 dark:bg-green-900/50 h-48 rounded-xl">
-                {/* Image placeholder */}
+              <div className="bg-[url(https://res.cloudinary.com/doqbnfais/image/upload/v1743185597/onPoint%20website%20concept/website%20assets/website%20images/website%20design%20and%20stock%20photos/women-paris-selfie_vjci8a.jpg)] bg-cover bg-right-top lg:bg-center h-48 rounded-xl">
+                
               </div>
 
               <div className="flex items-center justify-between">
