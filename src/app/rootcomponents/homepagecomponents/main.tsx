@@ -1,4 +1,5 @@
 import Header from "../header";
+import BookingSteps from "./bookingsteps";
 import HerosectionOne from "./herosection";
 import HomeTopDestinations from "./hometopdestinations";
 import OurServicesSection from "./ourservices";
@@ -10,6 +11,7 @@ export default function Main() {
       <HerosectionOne />
       <OurServicesSection />
       <HomeTopDestinations />
+      <BookingSteps />
   </main>
   )
 }
