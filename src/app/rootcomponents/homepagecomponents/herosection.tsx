@@ -13,7 +13,7 @@ export default function HerosectionOne() {
           />
         </div>
 
-        <div className="text-darkmode-text-color relative min-w-full flex flex-col justify-center items-center">
+        <div className="motion-preset-fade text-darkmode-text-color relative min-w-full flex flex-col justify-center items-center">
           <h3>Straight To the Point</h3>
         </div>
 
