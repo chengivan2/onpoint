@@ -39,7 +39,7 @@ export default function OurServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="motion-preset-slide-down p-6 bg-lightmode-header-bg-color dark:bg-darkmode-header-bg-color rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className={`motion-preset-slide-down motion-duration-${index * 1000} p-6 bg-lightmode-header-bg-color dark:bg-darkmode-header-bg-color rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2`}
             >
               <div className="text-4xl mb-4 text-green-500">{service.icon}</div>
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
