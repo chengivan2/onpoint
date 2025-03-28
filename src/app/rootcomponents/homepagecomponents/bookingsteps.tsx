@@ -110,8 +110,8 @@ export default function BookingSection() {
         </div>
 
         {/* Image Card */}
-        <div className="flex-1 w-full max-w-xl animate-fade-in-right delay-300">
-          <div className="relative rounded-2xl shadow-xl border-green-100/30 dark:border-green-900/30 hover:shadow-xl  p-8 border">
+        <div className="flex-1 w-full max-w-xl motion-preset-slide-left motion-duration-2000 delay-300">
+          <div className="relative rounded-2xl shadow-xl border-green-100/30 dark:border-green-900/30 hover:shadow-xl p-8 border">
             <div className="space-y-6">
               <div className="flex justify-between items-start">
                 <div>
