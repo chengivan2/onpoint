@@ -1,3 +1,7 @@
+"use client";
+
+import { TypeAnimation } from "react-type-animation";
+
 export default function BookingStepsImageCard() {
   return (
     <div className="flex-1 w-full max-w-xl motion-preset-slide-left motion-duration-2000 delay-300">
@@ -8,11 +12,21 @@ export default function BookingStepsImageCard() {
               <h3 className="text-2xl font-bold text-green-800 dark:text-green-100">
                 Trip To Paris
               </h3>
-              <p className="text-green-600 dark:text-green-300">
-                14-29 June 2025 | by Sifa Joy
-              </p>
+
+              <TypeAnimation
+              sequence={["14-29 June 2025 | Booked by Sifa Joy"]}
+              wrapper="span"
+              speed={60}
+              repeat={Infinity}
+              cursor={false}
+              className="text-green-600 dark:text-green-300" />
+              
             </div>
-            <span className="bg-green-100/50 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-3 py-1 rounded-full text-sm">
+            <span className="relative flex items-center bg-green-100/50 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-3 py-1 rounded-full text-sm">
+              <div className="relative mr-2">
+                <div className="absolute animate-pulse -inset-1 bg-gradient-to-r from-green-400/60 to-green-600/60 rounded-full blur-[2px]"></div>
+                <div className="relative w-2 h-2 rounded-full bg-green-700 dark:bg-green-300"></div>
+              </div>
               Ongoing
             </span>
           </div>
