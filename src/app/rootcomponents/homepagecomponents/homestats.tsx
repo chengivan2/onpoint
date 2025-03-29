@@ -1,3 +1,7 @@
+"use client";
+
+import SlotCounter from 'react-slot-counter';
+
 export default function HomeStatsSection() {
     return (
         <section className="py-12 md:py-20">
@@ -9,11 +13,11 @@ export default function HomeStatsSection() {
 
                 <div className="grid gap-[1rem] *:text-center *:rounded-lg *:bg-white/60 *:dark:bg-green-900/20 *:backdrop-blur-md *:border *:border-green-100/40 *:dark:border-green-900/30 *:shadow-lg *transition-all *:dark:drop-shadow-2xl md:grid-cols-3">
                     <div className="rounded-(--radius) space-y-4 py-12">
-                        <div className="text-5xl font-bold text-green-500 dark:text-green-400 drop-shadow-lg">6,000</div>
+                        <div className="text-5xl font-bold text-green-500 dark:text-green-400 drop-shadow-lg"><SlotCounter value={"6,000"} /></div>
                         <p>Trips Organized</p>
                     </div>
                     <div className="rounded-(--radius) space-y-4 py-12">
-                        <div className="text-5xl font-bold text-green-500 dark:text-green-400 drop-shadow-lg">102,000</div>
+                        <div className="text-5xl font-bold text-green-500 dark:text-green-400 drop-shadow-lg"><SlotCounter value={"120,000"} /></div>
                         <p>Customers Served</p>
                     </div>
                     <div className="rounded-(--radius) space-y-4 py-12">
