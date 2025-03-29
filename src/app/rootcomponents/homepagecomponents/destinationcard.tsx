@@ -20,7 +20,7 @@ export default async function HomeDestinationCard() {
   }
 
   if (!data || data.length === 0) {
-    return <div className="text-green-600 p-4">No destinations found</div>;
+    return <div className="text-green-600 p-4">No destinations were found. Check back later.</div>;
   }
 
   return (
