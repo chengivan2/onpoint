@@ -141,7 +141,7 @@ export default function BookingSection() {
                     <div className="w-8 h-8 rounded-full bg-cover bg-[url(https://res.cloudinary.com/doqbnfais/image/upload/v1743234420/onPoint%20website%20concept/website%20assets/website%20images/website%20design%20and%20stock%20photos/booking%20steps%20faces/booking-steps-face-image-3_qhng3y.jpg)] border-2 border-white dark:border-green-900"></div>
                   </div>
                   <span className="text-green-600 dark:text-green-300 text-sm">
-                    24 people going
+                    5 people going
                   </span>
                 </div>
 
