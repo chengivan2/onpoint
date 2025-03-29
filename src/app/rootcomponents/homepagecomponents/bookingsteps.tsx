@@ -76,26 +76,26 @@ export default function BookingSection() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 lg:gap-12">
         {/* Steps Column */}
         <div className="flex-1 space-y-8">
-          <div className="text-center md:text-left animate-fade-in-down">
+          <div className="text-center md:text-left animate-fade-in-down motion-preset-slide-down motion-duration-2000 delay-300">
             <h2 className="text-4xl font-bold text-green-800 dark:text-green-200 mb-4">
               Easy and Fast
             </h2>
-            <p className="text-lg text-green-600 dark:text-green-300">
+            <p className="text-lg text-green-600 dark:text-green-300 motion-preset-slide-down motion-duration-2000 delay-1000">
               Book your next trip in 3 easy steps
             </p>
           </div>
 
           <div className="relative space-y-6">
-          <div className="absolute z-9 left-[3rem] top-18 bottom-20 w-0.5 bg-green-500/4 dark:bg-green-300/4"></div>
+          <div className="absolute z-9 left-[3rem] top-18 bottom-20 w-0.5 bg-green-500/4 dark:bg-green-300/4 motion-preset-slide-left motion-duration-2000"></div>
 
             {steps.map((step, index) => (
               <div
                 key={index}
-                className={`animate-fade-in-up delay-${
-                  index * 100
-                } relative z-10 p-6 rounded-xl transition-all duration-300`}
+                className="relative z-10 p-6 rounded-xl transition-all duration-300"
               >
-                <div className="flex items-start gap-4">
+                <div className={`motion-preset-slide-right motion-duration-2000 delay-[${
+                  index * 1000
+                }] flex items-start gap-4`}>
                   <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     {step.icon}
                   </div>
