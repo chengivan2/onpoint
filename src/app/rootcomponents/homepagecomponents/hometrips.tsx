@@ -23,9 +23,9 @@ export default async function HomeTripCards() {
       short_description,
       main_featured_image_url,
       price,
-      destinations!inner(name)
+      destination:destinations!inner(name)
     `)
-    .order("created_at", { ascending: false });
+    .order("created_at", { ascending: false }).returns<Trip[]>();
 
   if (error) {
     return <div className="text-red-500 p-4">Error loading trips: {error.message}</div>;
@@ -74,6 +74,8 @@ export default async function HomeTripCards() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                   </svg>
+
+                  <h5>{trip.destination?.name || "Unknown Destination"}</h5>
                   
                 </div>
 
@@ -83,7 +85,7 @@ export default async function HomeTripCards() {
 
                 <div className="flex items-center justify-between mt-4">
                   <div className="space-y-1">
-                    <span className="text-2xl font-bold text-green-700 dark:text-green-300">
+                    <span className="text-3xl font-bold text-green-700 dark:text-green-300 font-heading">
                       {trip.price.toLocaleString('en-US', {
                         style: 'currency',
                         currency: 'USD',

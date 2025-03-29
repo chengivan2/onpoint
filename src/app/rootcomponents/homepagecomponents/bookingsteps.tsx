@@ -4,26 +4,26 @@ export default function BookingSection() {
   const steps = [
     {
       icon: (
-        <svg 
-  className="w-6 h-6 text-green-600 dark:text-green-300" 
-  fill="none" 
-  stroke="currentColor" 
-  viewBox="0 0 24 24"
-  aria-hidden="true"
->
-  <path 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
-    strokeWidth="2" 
-    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-  />
-  <path 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
-    strokeWidth="2" 
-    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-  />
-</svg>
+        <svg
+          className="w-6 h-6 text-green-600 dark:text-green-300"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+          />
+        </svg>
       ),
       title: "1. Choose Destination",
       description:
@@ -86,16 +86,18 @@ export default function BookingSection() {
           </div>
 
           <div className="relative space-y-6">
-          <div className="absolute z-9 left-[3rem] top-18 bottom-20 w-0.5 bg-green-500/4 dark:bg-green-300/4 motion-preset-slide-left motion-duration-2000"></div>
+            <div className="absolute z-9 left-[3rem] top-18 bottom-20 w-0.5 bg-green-500/4 dark:bg-green-300/4 motion-preset-slide-left motion-duration-2000"></div>
 
             {steps.map((step, index) => (
               <div
                 key={index}
                 className="relative z-10 p-6 rounded-xl transition-all duration-300"
               >
-                <div className={`motion-preset-slide-right motion-duration-2000 delay-[${
-                  index * 1000
-                }] flex items-start gap-4`}>
+                <div
+                  className={`motion-preset-slide-right motion-duration-2000 delay-[${
+                    index * 1000
+                  }] flex items-start gap-4`}
+                >
                   <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     {step.icon}
                   </div>
@@ -115,7 +117,6 @@ export default function BookingSection() {
 
         {/* Image Card */}
         <BookingStepsImageCard />
-        
       </div>
     </section>
   );
