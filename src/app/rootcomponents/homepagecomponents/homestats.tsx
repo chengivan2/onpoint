@@ -3,7 +3,7 @@ export default function HomeStatsSection() {
         <section className="py-12 md:py-20">
             <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
                 <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
-                    <h2 className="text-4xl font-semibold lg:text-5xl">Straight to the Stats with onPoint</h2>
+                    <h2 className="text-4xl font-semibold lg:text-5xl">Straight to the onPoint Stats</h2>
                     <p>With our reach and contacts all over the world, getting you from point A to point B is way easier and much more comfy with onPoint. You might think it's a lie but numbers never lie</p>
                 </div>
 
